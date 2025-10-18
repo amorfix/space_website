@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Космические исследования</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Космические исследования человечества</h1>
+    </header>
+
+    <nav>
+      <button class="tab-btn active" data-tab="home">Главная</button>
+      <button class="tab-btn" data-tab="facts">Факты</button>
+      <button class="tab-btn" data-tab="gallery">Галерея</button>
+      <button class="tab-btn" data-tab="contact">Обратная связь</button>
+    </nav>
+
+    <main>
+      <section id="home" class="tab-content active">
+        <h2>Добро пожаловать в удивительный мир космоса!</h2>
+        <p>
+          На этом сайте вы познакомитесь с важнейшими достижениями человечества
+          в исследовании космического пространства, увидите впечатляющие
+          изображения космических объектов и сможете поделиться своими мыслями о
+          космосе.
+        </p>
+        <div class="main-image">
+          <img
+            src="https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg"
+            alt="Космический пейзаж"
+          />
+        </div>
+      </section>
+
+      <section id="facts" class="tab-content">
+        <h2>Интересные факты о космических исследованиях</h2>
+        <ul>
+          <li>
+            Первым человеком в космосе стал Юрий Гагарин, совершивший полет 12
+            апреля 1961 года на корабле "Восток-1".
+          </li>
+          <li>
+            Международная космическая станция (МКС) — самый дорогой объект,
+            когда-либо построенный людьми. Его стоимость оценивается более чем в
+            150 миллиардов долларов.
+          </li>
+          <li>
+            Космический телескоп Джеймса Уэбба, запущенный в 2021 году, является
+            самым мощным космическим телескопом и способен наблюдать объекты,
+            удаленные от нас на 13,6 миллиардов световых лет.
+          </li>
+          <li>
+            На Марсе находится самая высокая гора в Солнечной системе — вулкан
+            Олимп, высота которого достигает 22 км.
+          </li>
+          <li>
+            Скафандр для выхода в открытый космос стоит около 12 миллионов
+            долларов.
+          </li>
+          <li>
+            Луна постепенно удаляется от Земли со скоростью около 3,8 см в год.
+          </li>
+          <li>
+            В 2020-х годах началась новая эра исследования Луны с программами
+            Артемида (NASA) и другими международными миссиями.
+          </li>
+        </ul>
+      </section>
+
+      <section id="gallery" class="tab-content">
+        <h2>Галерея космических изображений</h2>
+        <div class="image-grid">
+          <div class="gallery-item">
+            <img src="images/mars.jpg" alt="Марсоход на поверхности Марса" />
+            <p>Поверхность Марса, исследуемая марсоходами</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/earth.webp" alt="Земля из космоса" />
+            <p>Вид на Землю с лунной орбиты</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/nebula.jpg" alt="Туманность Ориона" />
+            <p>Туманность Ориона — область звездообразования</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/venus.jpeg" alt="Венера" />
+            <p>Венера - вторая планета от Солнца</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/saturn.webp" alt="Кольца Сатурна" />
+            <p>Великолепные кольца Сатурна</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/milky-way.jpg" alt="Млечный Путь" />
+            <p>Наша галактика - Млечный Путь</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="tab-content">
+        <h2>Обратная связь</h2>
+        <p>
+          Если вы хотите поделиться своими мыслями о космосе или задать вопрос,
+          заполните форму ниже:
+        </p>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Имя:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введите ваше имя"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Напишите ваше сообщение"
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Зернаев Роман Денисович, группа ИВТ-22-1, 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
